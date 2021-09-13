@@ -9,3 +9,7 @@ Lori Timmons
 URL of the deployed application:
 
 The URL of the GitHub repository: 
+
+<!-- Notes -->
+homework notes 04 
+use <select> and <option> See the prepwork 

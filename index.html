@@ -8,24 +8,33 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <header>
-        <h1 class="page title">Coding Quiz</h1>
-        <p>Click the below button to start the quiz</p>
-        <button class="btn" id= "start-quiz">Start Quiz</button>
-    </header>
-    <!-- Might need to change regarding questions -->
-    <main class="page-content">
-        <section class="task-list-wrapper">
-          <h2 class="list-title">Tasks To Do</h2>
-          <ul class="task-list">
-            <li class="task-item">Questions</li>
-          </ul>
-        </section>
-      </main>
+<!-- main container box -->
+
+<section>
+<div class="container">
+  <p id="countdown">60</p>
+<div id="questions-container" class="hide"></div>
+<div id="question">Question</div>
+<div id= "answer-buttons" class="btn-grid">
+  <button class="btn">Answer 1</button>
+  <button class="btn">Answer 2</button>
+  <button class="btn">Answer 3</button>
+  <button class="btn">Answer 4</button>
+</div>
+<button id="start-btn" class="start-btn btn">Start</button>
+<button id="next-btn" class="next-btn btn hide">Next</button>
+</div>
+<!-- holds the body of the quiz -->
+  <div id="quiz"></div>
+  <div id="results"></div>
+</section>
 <footer>
-    You got this! 
+  <h3>You got this </h3>
 </footer>
-    <script src="./assets/js/script.js"></script>
-    
+
+<script src="./assets/js/script.js"></script>
 </body>
 </html>
+
+
+
