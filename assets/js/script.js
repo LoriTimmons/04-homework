@@ -78,8 +78,10 @@ function selectAnswer(e) {
   if (shuffledQuestions.length > currentQuestionIndex + 1) {
     // nextButton.classList.remove("hide");
     currentQuestionIndex++;
+    setTimeout(function() {
     setNextQuestion();
-  }else {
+  }, 500) 
+}else {
     startButton.innerText = "Restart";
     startButton.classList.remove("hide");
   }
@@ -92,11 +94,7 @@ function setStatusClass(element, correct) {
   } else {
     element.classList.add("wrong");
   }
-  setTimeout(function(){
-      clearStatusClass(element, correct)
-  }, 500);
 }
-
 
 function clearStatusClass(element, correct) {
   if (correct) {
