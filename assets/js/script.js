@@ -15,16 +15,10 @@ let countDownEl = document.getElementById("countdown");
 let timerID;
 
 startButton.addEventListener("click", startGame);
-// nextButton.addEventListener("click", () => {
-//   currentQuestionIndex++;
-//   setNextQuestion();
-// });
 
-// subtracting from page and showing it to webpage
 
 function countDown() {
   startingSeconds--;
-  console.log(startingSeconds);
   countDownEl.innerText = startingSeconds;
   if (startingSeconds <= 0) {
     clearInterval(timerID);
@@ -59,8 +53,7 @@ function showQuestion(question) {
     button.classList.add("btn");
     if (answer.correct) {
       button.dataset.correct = answer.correct;
-    }
-    console.log(button);
+    } 
 
     button.addEventListener("click", selectAnswer);
     answerButtonEL.appendChild(button);
@@ -128,7 +121,7 @@ const questions = [
   },
 
   {
-    question: "Q2 When would you use "==="?",
+    question: "Q2 When would you use a triple =?",
     answer: [
       { text: "to assign a value", correct: false },
       { text: "When comparing two values", correct: true },
