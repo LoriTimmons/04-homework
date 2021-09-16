@@ -28,7 +28,9 @@ function countDown() {
   countDownEl.innerText = startingSeconds;
   if (startingSeconds <= 0) {
     clearInterval(timerID);
-  }
+    document.getElementById('countdown').innerText = "Game Over";
+  } 
+  
 }
 
 function startGame() {
@@ -99,7 +101,7 @@ function setStatusClass(element, correct) {
   }
   setTimeout(function(){
       clearStatusClass(element, correct)
-  }, 500)
+  }, 500);
 }
 
 
@@ -116,41 +118,47 @@ function clearStatusClass(element, correct) {
 // // Questions array
 const questions = [
   {
-    question: "Placeholder 1",
+    question: "Q1 What is a Function?",
     answer: [
-      { text: "Placeholder", correct: true },
-      { text: "Placeholder", correct: false },
-      { text: "Placeholder", correct: false },
-      { text: "Placeholder", correct: false },
+      { text: "a set of statements that performs a task or calculates a value", correct: true },
+      { text: "An junction", correct: false },
+      { text: "property of an object", correct: false },
+      { text: "an activity or purpose natural to or intended for a person or thing", correct: false },
     ],
   },
 
   {
-    question: "Placeholder 2",
+    question: "Q2 When would you use "==="?",
     answer: [
-      { text: "Placeholder", correct: true },
-      { text: "Placeholder", correct: false },
+      { text: "to assign a value", correct: false },
+      { text: "When comparing two values", correct: true },
+      { text: "When something is identical", correct: false },
+      { text: "To show a relation to a var", correct: false },
     ],
   },
 
   {
-    question: "Placeholder 3",
+    question: "Q3 What is a string? ",
     answer: [
-      { text: "Placeholder", correct: true },
-      { text: "Placeholder", correct: false },
+      { text: "Thread", correct: false },
+      { text: "Number content ", correct: false },
+      { text: "textual content", correct: true },
+      { text: "Something used to make a dress", correct: false },
     ],
   },
 
   {
-    question: "Placeholder 4",
+    question: "Q4 Why is JavaScript Fun?",
     answer: [
-      { text: "Placeholder", correct: true },
-      { text: "Placeholder", correct: false },
+      { text: "Cause it makes my website cool", correct: false },
+      { text: "Cause it's fun to say JavaScript", correct: false },
+      { text: "Cause I can add interactivity to website ", correct: false },
+      { text: "All of the above", correct: true},
     ],
   },
 ];
 
-
+// To Do 
 // debug why its not showing the wrong answers when it red. Figure out 
 // Keep track of the correct answer 
 // wrong answer take time off the clock startingseconds = startingSeconds -2 
