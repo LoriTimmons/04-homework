@@ -6,7 +6,7 @@ This quiz will get you prepared to enter the JavaScript world. When you click th
 
 <!-- ScreenShot -->
 ![q1](./assets/Images/Q1.png)
-![q2](./assets/Images/Q2.png)
+![q3](./assets/Images/Q3.png)
 
 URL of the deployed application:
 
