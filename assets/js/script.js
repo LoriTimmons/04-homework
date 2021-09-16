@@ -8,7 +8,7 @@ const questionEl = document.getElementById("question");
 const answerButtonEL = document.getElementById("answer-buttons");
 // let correct = document.getElementById("btn.correct");
 const countDownEL = document.getElementById("countdown");
-let startingSeconds = 5;
+let startingSeconds = 60;
 let time = startingSeconds * 1;
 let countDownEl = document.getElementById("countdown");
 // Creating but not def'ing it yet
